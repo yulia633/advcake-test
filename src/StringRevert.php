@@ -88,7 +88,7 @@ function cleanChars(array $chars): array
  * @param  string|array $items
  * @return array
  */
-function flatten(string|array $items): array
+function flatten($items): array
 {
     if (!is_array($items)) {
         return [$items];
