@@ -67,7 +67,6 @@ function addPunctuation(array $chars): string
     $punctuation = array_filter($chars, function ($el) {
         return in_array($el, MAP);
     });
-    
     return implode(" ", $punctuation);
 }
 
