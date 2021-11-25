@@ -1,0 +1,33 @@
+{
+    "name": "yulia633/reverse-string-test",
+    "description": "Basic test",
+    "keywords": ["reverse-string", "php"],
+    "type": "project",
+    "authors": [
+        {
+            "name": "yulia633,",
+            "email": "ignat633yulia@yandex.ru"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/StringRevert.php"
+        ],
+        "psr-4": {
+            "App\\Tests\\": "tests",
+            "App\\": "src"
+        }
+    },
+    "scripts": {
+        "phpcs": "phpcs",
+        "phpunit": "phpunit"
+    },
+    "require": {
+        "php":">=7.4.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "phpunit/phpunit": "^9"
+    },
+    "license": "MIT"
+}
