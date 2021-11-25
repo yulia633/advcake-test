@@ -60,15 +60,15 @@ function revertWord(string $string): array
 /**
  * Method to add punctuation
  * @param  array $chars
- * @return mixed
+ * @return string
  */
-function addPunctuation(array $chars): mixed
+function addPunctuation(array $chars): string
 {
     $punctuation = array_filter($chars, function ($el) {
         return in_array($el, MAP);
     });
-
-    return !empty($punctuation) ? implode(" ", $punctuation) : false;
+    
+    return implode(" ", $punctuation);
 }
 
 /**
